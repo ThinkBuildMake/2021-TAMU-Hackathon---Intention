@@ -3,11 +3,11 @@
   "name": "Intention",
   "description": "Intentionally Focus",
   "version": "1.0",
-  "Icons":{
-    "128":"Icons\Logo_128px.png",
-  }
+  "icons":{
+    "128":"Icons/Logo_128px.png"
+  },
   "browser_action":{
-    "default_icon": "Icons\Logo_128px.png",
-    "default_popup": "popup.html" 
+    "default_icon": "Icons/Logo_128px.png",
+    "default_popup": "popup.html"
   }
 }
