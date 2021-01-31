@@ -23,6 +23,7 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo) {
     const { blocked, enabled } = local;
     if (enabled) {
       chrome.tabs.remove(tabId);
+      window.open("popup.html")
     }
   });
 });
