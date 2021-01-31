@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
-    <meta charset="utf-8">
-    <title>Intend to be great</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <script src = "blockerScript.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="popup.css">
+    <style>
+    </style>
   </head>
   <body>
-    <!-- Rounded switch, taken from w3school.com -->
-    <h1>Intention</h1>
-    <label class="switch">
-      <input type="checkbox" id = "Focus Mode">
-      <span class="slider round">Focus Mode</span>
-    </label>
+    <div id="notes-container">
+      <h6>Start your Study Intention</h6>
+      <ul id="notes"></ul>
+    </div>
+    <div class="container">
+      <textarea class="form-control" id="note-value"></textarea>
+      </br>
+      <button class="btn btn-dark" id="start-intention">Start</button>
+      <button class="btn btn-danger" id="stop-intention">Need a break</button>
+      <script src="popup.js"></script>
+    </div>
   </body>
 </html>
