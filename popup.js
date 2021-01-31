@@ -11,11 +11,13 @@ function timer(seconds) {
   }, 1000);
 }
 
-//When focus mode = 1 and if you switch to chrome, create an unremovable popup for 20 seconds
-if (start == 1)
-  while (1) {
-    timer(20);
-    if (startBreak == 1) {
-      break;
-    }
-  }
+function startFocusMode(){
+  chrome.storage.local.set({ enabled: true });
+}
+start.onclick = startFocusMode
+
+function stopFocusMode(){
+  chrome.storage.local.set({ enabled: false });
+}
+
+startBreak.onclick = stopFocusMode
