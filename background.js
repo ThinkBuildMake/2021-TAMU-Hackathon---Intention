@@ -22,8 +22,9 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo) {
   chrome.storage.local.get(["blocked", "enabled"], function (local) {
     const { blocked, enabled } = local;
     if (enabled) {
-      chrome.tabs.remove(tabId);
-      window.open("popup.html")
+      window.open("message.html")
+      chrome.tabs.remove(tabId)
+      
     }
   });
 });
